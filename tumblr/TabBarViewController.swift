@@ -11,11 +11,33 @@ import UIKit
 class TabBarViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet var buttons: [UIButton]!
+    
+    var homeViewController: UIViewController!
+    var searchViewController: UIViewController!
+    var accountViewController: UIViewController!
+    var trendingViewController: UIViewController!
+    
+    var viewControllers: [UIViewController]!
+    
+    var selectedIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        homeViewController = storyboard.instantiateViewControllerWithIdentifier("home")
+        searchViewController = storyboard.instantiateViewControllerWithIdentifier("search")
+        accountViewController = storyboard.instantiateViewControllerWithIdentifier("account")
+        trendingViewController = storyboard.instantiateViewControllerWithIdentifier("trending")
+        
+        viewControllers = [homeViewController, searchViewController, accountViewController, trendingViewController]
 
-        // Do any additional setup after loading the view.
+        buttons[selectedIndex].selected = true
+        didTapTabButton(buttons[selectedIndex])
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +45,28 @@ class TabBarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didTapTabButton(sender: UIButton) {
+        let previousIndex = selectedIndex
+        selectedIndex = sender.tag
+        
+        buttons[previousIndex].selected = false
+        let previousVC = viewControllers[previousIndex]
+        previousVC.willMoveToParentViewController(nil)
+        previousVC.view.removeFromSuperview()
+        previousVC.removeFromParentViewController()
+        
+        sender.selected = true
+        let vc = viewControllers[selectedIndex]
+        addChildViewController(vc)
+        vc.view.frame = contentView.bounds
+        contentView.addSubview(vc.view)
+        vc.didMoveToParentViewController(self)
+
+
+
+
+    
+    }
 
     /*
     // MARK: - Navigation
