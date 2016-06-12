@@ -15,6 +15,11 @@
 		B11740341D0E119700D8C0FB /* tumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11740331D0E119700D8C0FB /* tumblrTests.swift */; };
 		B117403F1D0E119700D8C0FB /* tumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B117403E1D0E119700D8C0FB /* tumblrUITests.swift */; };
 		B117404D1D0E16A800D8C0FB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B117404C1D0E16A800D8C0FB /* TabBarViewController.swift */; };
+		B117404F1D0E194200D8C0FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B117404E1D0E194200D8C0FB /* HomeViewController.swift */; };
+		B11740511D0E194C00D8C0FB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11740501D0E194C00D8C0FB /* SearchViewController.swift */; };
+		B11740531D0E195700D8C0FB /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11740521D0E195700D8C0FB /* ComposeViewController.swift */; };
+		B11740551D0E196300D8C0FB /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11740541D0E196300D8C0FB /* AccountViewController.swift */; };
+		B11740571D0E197000D8C0FB /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11740561D0E197000D8C0FB /* TrendingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		B117403E1D0E119700D8C0FB /* tumblrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tumblrUITests.swift; sourceTree = "<group>"; };
 		B11740401D0E119700D8C0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B117404C1D0E16A800D8C0FB /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B117404E1D0E194200D8C0FB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B11740501D0E194C00D8C0FB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B11740521D0E195700D8C0FB /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		B11740541D0E196300D8C0FB /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		B11740561D0E197000D8C0FB /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,11 @@
 				B11740271D0E119600D8C0FB /* LaunchScreen.storyboard */,
 				B117402A1D0E119700D8C0FB /* Info.plist */,
 				B117404C1D0E16A800D8C0FB /* TabBarViewController.swift */,
+				B117404E1D0E194200D8C0FB /* HomeViewController.swift */,
+				B11740501D0E194C00D8C0FB /* SearchViewController.swift */,
+				B11740521D0E195700D8C0FB /* ComposeViewController.swift */,
+				B11740541D0E196300D8C0FB /* AccountViewController.swift */,
+				B11740561D0E197000D8C0FB /* TrendingViewController.swift */,
 			);
 			path = tumblr;
 			sourceTree = "<group>";
@@ -259,9 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B11740511D0E194C00D8C0FB /* SearchViewController.swift in Sources */,
+				B11740571D0E197000D8C0FB /* TrendingViewController.swift in Sources */,
 				B11740211D0E119600D8C0FB /* ViewController.swift in Sources */,
+				B11740551D0E196300D8C0FB /* AccountViewController.swift in Sources */,
 				B117404D1D0E16A800D8C0FB /* TabBarViewController.swift in Sources */,
+				B11740531D0E195700D8C0FB /* ComposeViewController.swift in Sources */,
 				B117401F1D0E119600D8C0FB /* AppDelegate.swift in Sources */,
+				B117404F1D0E194200D8C0FB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
