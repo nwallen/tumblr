@@ -14,6 +14,7 @@
 		B11740291D0E119600D8C0FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11740271D0E119600D8C0FB /* LaunchScreen.storyboard */; };
 		B11740341D0E119700D8C0FB /* tumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11740331D0E119700D8C0FB /* tumblrTests.swift */; };
 		B117403F1D0E119700D8C0FB /* tumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B117403E1D0E119700D8C0FB /* tumblrUITests.swift */; };
+		B117404D1D0E16A800D8C0FB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B117404C1D0E16A800D8C0FB /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B117403A1D0E119700D8C0FB /* tumblrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tumblrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B117403E1D0E119700D8C0FB /* tumblrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tumblrUITests.swift; sourceTree = "<group>"; };
 		B11740401D0E119700D8C0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B117404C1D0E16A800D8C0FB /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				B11740251D0E119600D8C0FB /* Assets.xcassets */,
 				B11740271D0E119600D8C0FB /* LaunchScreen.storyboard */,
 				B117402A1D0E119700D8C0FB /* Info.plist */,
+				B117404C1D0E16A800D8C0FB /* TabBarViewController.swift */,
 			);
 			path = tumblr;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11740211D0E119600D8C0FB /* ViewController.swift in Sources */,
+				B117404D1D0E16A800D8C0FB /* TabBarViewController.swift in Sources */,
 				B117401F1D0E119600D8C0FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
