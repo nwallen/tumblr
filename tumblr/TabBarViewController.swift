@@ -18,6 +18,8 @@ class TabBarViewController: UIViewController {
     var accountViewController: UIViewController!
     var trendingViewController: UIViewController!
     
+    @IBOutlet weak var bubbleImage: UIImageView!
+    
     var viewControllers: [UIViewController]!
     
     var selectedIndex: Int = 0
@@ -37,6 +39,9 @@ class TabBarViewController: UIViewController {
         buttons[selectedIndex].selected = true
         didTapTabButton(buttons[selectedIndex])
         
+        UIView.animateWithDuration(0.5, delay: 0, options: [.Autoreverse, .Repeat], animations: { () -> Void in
+                self.bubbleImage.frame.origin.y += 4
+            }, completion: nil)
 
     }
 
@@ -54,6 +59,10 @@ class TabBarViewController: UIViewController {
         previousVC.willMoveToParentViewController(nil)
         previousVC.view.removeFromSuperview()
         previousVC.removeFromParentViewController()
+        
+        if selectedIndex == 1 {
+            bubbleImage.alpha = 0
+        }
         
         sender.selected = true
         let vc = viewControllers[selectedIndex]
